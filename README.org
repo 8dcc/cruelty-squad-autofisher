@@ -24,4 +24,4 @@ Unpause the game. Starting in 3 seconds at position: (X, Y)
 Quit by holding F4 for more than 1 seconds.
 #+end_src
 
-[[https://github.com/8dcc/cruelty-squad-autofisher/assets/29655971/cab602d6-8801-4489-a77c-614c5d431f5a]]
+[[https://github-production-user-asset-6210df.s3.amazonaws.com/29655971/293527783-cab602d6-8801-4489-a77c-614c5d431f5a.png]]
