@@ -34,20 +34,29 @@ def main():
 
     x_pos, y_pos = m.position()
     print(f"Unpause the game. Starting in 5 seconds at position: ({x_pos}, {y_pos})")
-    print(f"Quit by holding F4 for more than {ROD_HOLD_DELAY} seconds.")
+    print(f"Toggle the autofisher by holding F4 for more than {ROD_HOLD_DELAY} seconds.")
     time.sleep(5)
 
-    while not keyboard.is_pressed("F4"):
-        # Scan for bubbles
-        if has_fishing_bubble(x_pos, y_pos):
-            x, y = m.position()
-            m.press(x, y)
+    try:
+        paused = False
+        while True:
+            if keyboard.is_pressed("F4"):
+                paused = not paused
+                print("Pausing..." if paused else "Resuming...")
+                time.sleep(0.5)
 
-            # Hold for N seconds
-            time.sleep(ROD_HOLD_DELAY)
+            # Scan for bubbles
+            if not paused and has_fishing_bubble(x_pos, y_pos):
+                x, y = m.position()
+                m.press(x, y)
 
-            x, y = m.position()
-            m.release(x, y)
+                # Hold for N seconds
+                time.sleep(ROD_HOLD_DELAY)
+
+                x, y = m.position()
+                m.release(x, y)
+    except KeyboardInterrupt:
+        print("\rCtrl-C detected. Exiting...")
 
 if __name__ == '__main__':
     main()
