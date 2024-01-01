@@ -12,14 +12,16 @@ $ sudo pip install --break-system-packages pyuserinput
 * Usage
 
 Simply run the script and follow the instructions. The script needs to be run as
-root, and the [[https://crueltysquad.fandom.com/wiki/Night_Vision_Goggles][Night Vision Goggles]] have to be equipped, since the script depends
-on the grayscale filter.
+root.
+
+You should place the mouse where the green bubbles are going to appear, usually
+above the crosshair.
 
 #+begin_src console
-$ sudo python3 grayscale.py
+$ sudo python3 autofish.py
 Getting position in 5 seconds, pause the game and move the mouse to a black area.
 Unpause the game. Starting in 3 seconds at position: (X, Y)
 Quit by holding F4 for more than 1 seconds.
 #+end_src
 
-TODO: Add version without grayscale.
+[[https://github.com/8dcc/cruelty-squad-autofisher/assets/29655971/cab602d6-8801-4489-a77c-614c5d431f5a]]
