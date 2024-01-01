@@ -1,0 +1,25 @@
+#+TITLE:  Cruelty Squad Auto-fisher
+#+AUTHOR: 8dcc
+
+*Python script for automatically fishing in Cruelty Squad. Only tested on Linux.*
+
+* Dependencies
+
+#+begin_src console
+$ sudo pip install --break-system-packages pyuserinput
+#+end_src
+
+* Usage
+
+Simply run the script and follow the instructions. The script needs to be run as
+root, and the [[https://crueltysquad.fandom.com/wiki/Night_Vision_Goggles][Night Vision Goggles]] have to be equipped, since the script depends
+on the grayscale filter.
+
+#+begin_src console
+$ sudo python3 grayscale.py
+Getting position in 5 seconds, pause the game and move the mouse to a black area.
+Unpause the game. Starting in 3 seconds at position: (X, Y)
+Quit by holding F4 for more than 1 seconds.
+#+end_src
+
+TODO: Add version without grayscale.
