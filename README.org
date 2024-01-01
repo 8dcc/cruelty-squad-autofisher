@@ -20,8 +20,8 @@ above the crosshair.
 #+begin_src console
 $ sudo python3 autofish.py
 Getting position in 5 seconds, pause the game and move the mouse to a black area.
-Unpause the game. Starting in 3 seconds at position: (X, Y)
-Quit by holding F4 for more than 1 seconds.
+Unpause the game. Starting in 5 seconds at position: (X, Y)
+Toggle the autofisher by holding F4 for more than 1 seconds.
 #+end_src
 
 [[https://github-production-user-asset-6210df.s3.amazonaws.com/29655971/293527783-cab602d6-8801-4489-a77c-614c5d431f5a.png]]
