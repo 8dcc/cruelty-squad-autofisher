@@ -19,8 +19,10 @@ above the crosshair.
 
 #+begin_src console
 $ sudo python3 autofish.py
-Getting position in 5 seconds, pause the game and move the mouse to a black area.
-Unpause the game. Starting in 5 seconds at position: (X, Y)
+Pause the game and move the mouse where the green bubbles will appear.
+Getting position in 5 seconds...
+Unpause the game.
+Starting in 5 seconds at position: (X, Y)
 Toggle the autofisher by holding F4 for more than 1 seconds.
 #+end_src
 

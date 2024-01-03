@@ -26,16 +26,19 @@ def has_fishing_bubble(x, y):
 def main():
     m = PyMouse()
 
-    print("Getting position in 5 seconds, pause the game and move the mouse to a black area.")
+    print("Pause the game and move the mouse where the green bubbles will appear.")
+    print("Getting position in 5 seconds...")
     time.sleep(5)
 
     # Exit pause
     keyboard.press("ESC")
 
     x_pos, y_pos = m.position()
-    print(f"Unpause the game. Starting in 5 seconds at position: ({x_pos}, {y_pos})")
-    print(f"Toggle the autofisher by holding F4 for more than {ROD_HOLD_DELAY} seconds.")
+    print("Unpause the game.")
+    print(f"Starting in 5 seconds at position: ({x_pos}, {y_pos})")
     time.sleep(5)
+
+    print(f"Toggle the autofisher by holding F4 for more than {ROD_HOLD_DELAY} seconds.")
 
     try:
         paused = False
